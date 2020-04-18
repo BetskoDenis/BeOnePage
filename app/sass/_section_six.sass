@@ -1,0 +1,176 @@
+.sectionSix
+  background-color: $bgColorHeader
+  padding: 85px 0 0 0
+  .sectionSixBlock
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    h3
+      span
+        color: $orange
+    .lineWrapper
+      height: 6px
+      width: 6px
+      background-color: $orange
+      border-radius: 50%
+      position: relative
+      margin-bottom: calc(30px + 2.6vw)
+      &:before
+        content: ''
+        position: absolute
+        top: 2px
+        right: 30px
+        height: 1px
+        width: calc(30px + 10.6vw)
+        background-color: rgba(255, 255, 255, .5)
+      &:after
+        content: ''
+        position: absolute
+        top: 2px
+        left: 30px
+        height: 1px
+        width: calc(30px + 10.6vw)
+        background-color: rgba(255, 255, 255, .5)
+
+    & > p
+      color: rgba(255, 255, 255, 1)
+      margin-bottom: calc(14px + 1vw)
+    .plansWrapper
+      display: flex
+      flex-wrap: wrap
+      max-width: 1170px
+      justify-content: center
+      margin-bottom: calc(15px + 5vw)
+      .plansItem
+        background-color: rgba(0, 0, 0, 1)
+        flex: 1 1 calc(33% - 30px)
+        margin: 0 15px 30px 15px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        padding: 25px 15px
+        min-width: 280px
+        border-radius: 5px
+        position: relative
+        max-width: 320px
+        h5
+          text-align: center
+        .plansCircle
+          height: 150px
+          width: 150px
+          border-radius: 50%
+          border: 2px solid $orange
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          margin-bottom: calc(15px + 2vw)
+          transition: all .25s
+          span
+            display: block
+            color: $orange
+            font-size: calc(14px + 2vw)
+            text-align: center
+            margin-bottom: 10px
+          p
+            color: $orange
+            font-size: 14px
+        & > p
+          color: rgba(255, 255, 255, 1)
+          letter-spacing: 1px
+          line-height: 1.5
+          text-align: center
+          margin-bottom: calc(15px + 2vw)
+        .plansButton
+          border: 2px solid rgba(255, 255, 255, 1)
+          background-color: rgba(255, 255, 255, 0)
+          color: rgba(255, 255, 255, 1)
+          text-transform: uppercase
+          padding: 10px 15px
+          letter-spacing: 1.5px
+          transition: all .25s
+          cursor: pointer
+          &:hover
+            color: rgba(0, 0, 0, 1)
+            background-color: rgba(255, 255, 255, 1)
+        .star
+          position: absolute
+          background-color: $orange
+          height: 60px
+          width: 40px
+          top: 0
+          right: 15px
+          display: flex
+          justify-content: center
+          align-items: center
+          i
+            font-size: 20px
+            color: rgba(255, 255, 255, 1)
+          &:after
+            content: ""
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 0
+            height: 0
+            border-bottom: 13px solid
+            border-left: 20px solid transparent
+            border-right: 20px solid transparent
+      .plansItem:hover
+        .plansCircle
+          background-color: $orange
+          span
+            color: rgba(255, 255, 255, 1)
+          p
+            color: rgba(255, 255, 255, 1)
+.followBlock
+  width: 100%
+  display: flex
+  justify-content: center
+  background-image: url(../img/twitter-bg.jpg)
+  background-repeat: no-repeat
+  background-attachment: fixed
+  padding: 80px 0
+  .followItem
+    max-width: 320px
+    min-width: 280px
+    display: flex
+    flex-direction: column
+    align-items: center
+    .followItemCircle
+      height: 100px
+      width: 100px
+      border-radius: 50%
+      border: 2px solid $orange
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin-bottom: calc(15px + 1vw)
+      i
+        display: block
+        color: $orange
+        font-size: calc(14px + 2vw)
+        text-align: center
+    p
+      color: rgba(255, 255, 255, 1)
+      text-align: center
+      letter-spacing: 1px
+      line-height: 1.5
+      margin-bottom: calc(15px + 1vw)
+    .followItemButton
+      border: 2px solid rgba(255, 255, 255, 1)
+      background-color: rgba(255, 255, 255, 0)
+      color: rgba(255, 255, 255, 1)
+      text-transform: uppercase
+      padding: 10px 15px
+      letter-spacing: 1.5px
+      transition: all .25s
+      cursor: pointer
+      &:hover
+        color: rgba(0, 0, 0, 1)
+        background-color: rgba(255, 255, 255, 1)
+
+

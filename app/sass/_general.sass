@@ -3,8 +3,62 @@
 body
   font-size: 14px
   min-width: 320px
+  font-family: 'Raleway',sans-serif
+h2
+  font-size: calc(16px + 2.2vw)
+  text-transform: uppercase
+  letter-spacing: 4px
+  color: rgba(255, 255, 255, 1)
+  margin-bottom: calc(14px + 1.17vw)
+  text-align: center
+  line-height: 2
+h3
+  font-size: calc(16px + 1.2vw)
+  text-transform: uppercase
+  color: rgba(255, 255, 255, 1)
+  margin-bottom: 14px
+  opacity: 0
+  transform: translate3d(0,-100%,0)
+  transition: all 1s ease-out
+  transition-delay: 0.2s
+h3.visible
+  opacity: 1
+  transform: none
+
+h4
+  font-size: calc(16px + 1vw)
+  color: rgba(255, 255, 255, 1)
+  margin-bottom: calc(14px + 3vw)
+
+h5
+  font-family: 'Dosis', sans-serif
+  font-size: calc(14px + .5vw)
+  text-transform: uppercase
+  color: rgba(255, 255, 255, 1)
+  letter-spacing: 1px
+  margin-bottom: 18px
+h6
+  font-family: 'Dosis', sans-serif
+  font-size: 16px
+  text-transform: uppercase
+  color: $orange
+  letter-spacing: 1px
+  margin-bottom: 18px
 .container
   padding: 0 15px
-  display: flex
   width: 100%
-  justify-content: space-between
+p.action
+  opacity: 0
+  transform: translate3d(0,-100%,0)
+  transition: all 1s ease-out
+  transition-delay: 0.2s
+p.action.visible
+  opacity: 1
+  transform: none
+@keyframes fadeInDown
+  0%
+    opacity: 0
+    transform: translate3d(0,-100%,0)
+  100%
+    opacity: 1
+    transform: none

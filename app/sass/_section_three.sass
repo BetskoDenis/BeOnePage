@@ -1,0 +1,90 @@
+.sectionThree
+  background-color: $orange
+  padding: 85px 0
+  .sectionOurWorks
+    display: flex
+    flex-direction: column
+    align-items: center
+    h3
+      color: rgba(0, 0, 0, 1)
+      font-family: 'Dosis', sans-serif
+    p
+      margin-bottom: calc(15px + 1vw)
+    .lineWrapperOurWorks
+      height: 6px
+      width: 6px
+      background-color: rgba(0, 0, 0, 1)
+      border-radius: 50%
+      position: relative
+      margin-bottom: calc(30px + 2.6vw)
+      &:before
+        content: ''
+        position: absolute
+        top: 2px
+        right: 30px
+        height: 1px
+        width: calc(30px + 10.6vw)
+        background-color: rgba(0, 0, 0, 1)
+      &:after
+        content: ''
+        position: absolute
+        top: 2px
+        left: 30px
+        height: 1px
+        width: calc(30px + 10.6vw)
+        background-color: rgba(0, 0, 0, 1)
+    .ourWorksButtonWrapper
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      margin-bottom: calc(15px + 2vw)
+      .ourWorksButton
+        outline: none
+        border: none
+        margin: 10px 5px
+        padding: 10px 20px
+        cursor: pointer
+        text-transform: uppercase
+        letter-spacing: 1px
+        transition: all .25s
+        font-size: 12px
+        &:hover
+          background-color: $bgColorHeader
+          color: rgba(255, 255, 255, 1)
+    .ourWorksWrapper
+      display: flex
+      flex-wrap: wrap
+      .ourWorksItem
+        flex: 1 1 25%
+        min-width: 280px
+        position: relative
+        overflow: hidden
+        cursor: pointer
+        img
+          height: 100%
+          width: 100%
+          object-fit: cover
+          transition: all .5s
+        figcaption
+          transform: scale(.3)
+          opacity: 0
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          background-color: rgba(0, 0, 0, .7)
+          display: flex
+          justify-content: center
+          align-items: center
+          flex-wrap: wrap
+          flex-direction: column
+          transition: all .5s
+          p
+            color: rgba(255, 255, 255, 1)
+      .ourWorksItem:hover
+        figcaption
+          transform: scale(1)
+          opacity: 1
+        img
+          transform: scale(1.4)

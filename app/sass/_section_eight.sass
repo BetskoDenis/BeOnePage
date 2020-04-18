@@ -1,0 +1,247 @@
+.sectionEight
+  background-color: $bgColorHeader
+  padding: 85px 0
+  position: relative
+  .container
+    .sectionEightBlock
+      .subscribeBlock
+        display: flex
+        flex-wrap: wrap
+        .subscribeBlockInfo
+          flex: 1 1 50%
+          min-width: 280px
+          margin-bottom: 20px
+          .subscribeBlockHeadline
+            display: flex
+            justify-content: center
+            margin-bottom: 20px
+            span
+              font-size: calc(14px + 1vw)
+            span:nth-child(odd)
+              color: $orange
+            span:nth-child(2)
+              color: rgba(255, 255, 255, 1)
+          p
+            display: block
+            color: rgba(255, 255, 255, 1)
+            text-align: center
+        .subscribeBlockInput
+          flex: 1 1 50%
+          min-width: 280px
+          display: flex
+          justify-content: center
+
+          input
+            height: 50px
+            font-size: calc(14px + .42px)
+            padding: 0 20px
+            border: none
+            border-bottom-left-radius: 3px
+            border-top-left-radius: 3px
+            width: calc(230px + 9vw)
+            outline: none
+          .subscribeButton
+             height: 50px
+             background-color: $orange
+             color: rgba(255, 255, 255, 1)
+             border: none
+             border-bottom-right-radius: 3px
+             border-top-right-radius: 3px
+             padding: 0 calc(10px + .5vw)
+             font-size: calc(12px + .42px)
+             outline: none
+             cursor: pointer
+      .formBlock
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+        padding: calc(15px + 4vw) 0
+        h3
+          color: $orange
+
+          span
+            color: rgba(255, 255, 255, 1)
+
+        .lineWrapper
+          height: 6px
+          width: 6px
+          background-color: $orange
+          border-radius: 50%
+          position: relative
+          margin-bottom: calc(30px + 2.6vw)
+          &:before
+            content: ''
+            position: absolute
+            top: 2px
+            right: 30px
+            height: 1px
+            width: calc(30px + 10.6vw)
+            background-color: rgba(255, 255, 255, .5)
+          &:after
+            content: ''
+            position: absolute
+            top: 2px
+            left: 30px
+            height: 1px
+            width: calc(30px + 10.6vw)
+            background-color: rgba(255, 255, 255, .5)
+        .formBlockWrapper
+          display: flex
+          flex-wrap: wrap
+          width: 100%
+          max-width: 1170px
+          .leftFormBlockWrapper
+            padding: 0 20px
+            flex: 1 1 33%
+            @media(max-width: 950px)
+              display: flex
+              flex-direction: column
+              align-items: center
+            .leftFormBlockItem
+              display: flex
+              color: rgba(255, 255, 255, .7)
+              justify-content: flex-end
+              padding: 20px 0
+              @media(max-width: 950px)
+                flex-direction: column
+
+
+              .leftFormBlockItemInfo
+                display: flex
+                flex-direction: column
+                border-right: 1px solid rgba(255, 255, 255, .7)
+                padding-right: 20px
+                align-items: flex-end
+                @media(max-width: 950px)
+                  padding-right: 0
+                  padding-bottom: 20px
+                  border-right: none
+                  border-bottom: 1px solid rgba(255, 255, 255, .7)
+                  margin-bottom: 20px
+                  align-items: center
+                p
+                  margin-bottom: 10px
+                span
+                  line-height: 1.5
+
+              .leftFormBlockItemImg
+                padding: 0 20px
+                min-width: 70px
+                display: flex
+                justify-content: center
+                align-items: center
+
+          .rightFormBlockWrapper
+            padding: 0 20px
+            flex: 1 1 67%
+            display: flex
+            flex-direction: column
+            min-width: 280px
+
+            .inputLineTop
+              display: flex
+              flex-wrap: wrap
+              margin-bottom: 20px
+              @media(max-width: 950px)
+                flex-direction: column
+              input
+                border: none
+                outline: none
+                background-color: $bgColorHeader
+                border-bottom: 1px solid rgba(255, 255, 255, .7)
+                min-height: 30px
+                flex: 1 1 calc(33% - 20px)
+                color: rgba(255, 255, 255, 1)
+                @media(max-width: 950px)
+                  margin-bottom: 20px
+                &:not(:last-child)
+                  margin-right: 20px
+                  @media(max-width: 950px)
+                    margin-right: 0
+            .subject, textarea, .capcha
+              min-height: 30px
+              border: none
+              outline: none
+              background-color: $bgColorHeader
+              border-bottom: 1px solid rgba(255, 255, 255, .7)
+              margin-bottom: 20px
+              color: rgba(255, 255, 255, 1)
+            textarea
+              min-height: 70px
+              resize: none
+            .capcha
+              width: 50%
+            .checkBox
+              display: flex
+              color: rgba(255, 255, 255, .7)
+              margin-bottom: 10px
+              input
+                margin-right: 10px
+              label
+                line-height: 1.5
+            .formButton
+              border: 2px solid rgba(255, 255, 255, 1)
+              color: rgba(255, 255, 255, 1)
+              background-color: rgba(255, 255, 255, 0)
+              text-transform: uppercase
+              padding: 10px
+              letter-spacing: 3px
+              transition: all .25s
+              cursor: pointer
+              outline: none
+              width: 50%
+              &:hover
+                background-color: rgba(255, 255, 255, .8)
+                color: rgba(0, 0, 0, 1)
+        &  > p
+          color: rgba(255, 255, 255, 1)
+          margin-bottom: calc(14px + 1vw)
+          opacity: 0
+          transform: translate3d(0,-100%,0)
+          transition: all 1s ease-out
+        &>p.visible
+          opacity: 1
+          transform: none
+  .buttonMap
+    position: absolute
+    bottom: 0
+    left: calc(50% - 120px)
+    min-width: 240px
+    cursor: pointer
+    color: rgba(255, 255, 255, .7)
+    .topButtonMap
+      position: absolute
+      top: -25px
+      left: calc(50% - 25px)
+      height: 0
+      width: 0
+      border: 25px solid
+      border-radius: 10px
+      transform: rotate(45deg)
+      //background-color: rgba(10, 10, 10, 1)
+      border-color: rgba(10, 10, 10, 1) transparent transparent rgba(10, 10, 10, 1)
+      i
+        font-size: 20px
+        transform: rotate(-45deg)
+        position: absolute
+        bottom: 2px
+        right: 0
+        top: -16px
+    .bottomButtonMap
+      width: 100%
+      height: 15px
+      background-color: rgba(10, 10, 10, 1)
+    span
+      position: absolute
+      left: 25px
+      display: block
+      text-align: center
+      text-transform: uppercase
+      background-color: rgba(0, 0, 0, 1)
+      transition: all .25s
+      opacity: 0
+      padding: 10px
+    &:hover
+      span
+       opacity: 1

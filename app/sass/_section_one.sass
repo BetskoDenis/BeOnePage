@@ -1,0 +1,119 @@
+@keyframes mouse
+  from
+    transform: translateY(0)
+    opacity: 1
+  to
+    transform: translateY(30px)
+    opacity: 0
+.sectionOne
+  height: 100vh
+  .sliderWrapper
+    height: 100%
+    position: relative
+    overflow: hidden
+    .mouseWrapper
+      height: 40px
+      width: 24px
+      border: 2px solid rgba(255, 255, 255, 1)
+      z-index: 2
+      position: absolute
+      bottom: 0
+      left: calc(50% - 12px)
+      border-radius: 12px
+      cursor: pointer
+      .scrollLine
+        transform: translateY(0)
+        width: 2px
+        height: 8px
+        position: absolute
+        top: 0
+        left: calc(50% - 1px)
+        background-color: rgba(255, 255, 255, 1)
+        animation-name: mouse
+        animation-duration: 1s
+        animation-iteration-count: infinite
+    .sliderBlock
+      height: 100%
+      display: flex
+      position: relative
+      left: 0
+      transition: all .25s
+      .sliderItem
+        height: 100%
+        position: relative
+        user-select: none
+        flex: 0 0 100%
+        img
+          height: 100%
+          width: 100%
+          object-fit: cover
+        .sliderHeadline
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          padding: 0 15px
+          h2
+            span
+              color: $orange
+          p
+            font-family: 'Dosis', sans-serif
+            font-size: calc(14px + .8vw)
+            color: rgba(255, 255, 255, 1)
+            letter-spacing: 2px
+            margin-bottom: calc(14px + 3vw)
+            text-align: center
+            line-height: 2
+          .firstButton
+            height: 37px
+            width: 120px
+            border: 2px solid rgba(255, 255, 255, 1)
+            border-radius: 50px
+            font-family: 'Dosis', sans-serif
+            color: rgba(255, 255, 255, 1)
+            display: flex
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            text-transform: uppercase
+            letter-spacing: 2px
+            transition: all .25s
+            &:hover
+              background-color: rgba(255, 255, 255, 1)
+              border-radius: 0
+              color: rgba(0, 0, 0, 1)
+
+    .sliderButton
+      height: 52px
+      width: 52px
+      border-radius: 2px
+      position: absolute
+      top: calc(50% - 18px)
+      background-color: rgba(0, 0, 0, .6)
+      z-index: 2
+      color: rgba(255, 255, 255, .4)
+      cursor: pointer
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 24px
+      i
+        transition: all .25s
+      &:hover
+        background-color: rgba(0, 0, 0, .9)
+        color: rgba(255, 255, 255, .9)
+    .sliderButton.leftArrow
+      left: 0
+      &:hover
+        i
+          transform: translateX(-5px)
+    .sliderButton.rightArrow
+      right: 0
+      &:hover
+        i
+          transform: translateX(5px)

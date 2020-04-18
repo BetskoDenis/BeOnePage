@@ -1,0 +1,263 @@
+.sectionFive
+  background-color: $bgColorHeader
+  padding: 85px 0
+  .sectionFiveBlock
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    h3
+      span
+        color: $orange
+    .lineWrapper
+      height: 6px
+      width: 6px
+      background-color: $orange
+      border-radius: 50%
+      position: relative
+      margin-bottom: calc(30px + 2.6vw)
+      &:before
+        content: ''
+        position: absolute
+        top: 2px
+        right: 30px
+        height: 1px
+        width: calc(30px + 10.6vw)
+        background-color: rgba(255, 255, 255, .5)
+      &:after
+        content: ''
+        position: absolute
+        top: 2px
+        left: 30px
+        height: 1px
+        width: calc(30px + 10.6vw)
+        background-color: rgba(255, 255, 255, .5)
+    .whyWeWrapper
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: calc(15px + 5vw)
+      @media (max-width: 900px)
+        flex-direction: column
+      .whyWeBlock
+        flex: 1 1 33%
+        min-width: 280px
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        padding: 0 20px
+        .whyWeItem
+          display: flex
+          flex-direction: column
+          @media (max-width: 900px)
+            align-items: center
+          .whyWeItemCircle
+            height: 96px
+            width: 96px
+            border: 2px solid $orange
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            margin-bottom: 15px
+            i
+              font-size: 36px
+              color: $orange
+          span
+            color: rgba(255, 255, 255, 1)
+            text-transform: uppercase
+            font-family: 'Dosis', sans-serif
+            letter-spacing: 1.5px
+            font-size: calc(14px + .5vw)
+            margin-bottom: 15px
+            @media (max-width: 900px)
+              text-align: center
+          p
+            color: rgba(255, 255, 255, 1)
+            font-family: 'Dosis', sans-serif
+            letter-spacing: 1.5px
+            line-height: 2
+            margin-bottom: 25px
+            @media (max-width: 900px)
+              text-align: center
+
+      .whyWeBlock.left
+        .whyWeItem
+          align-items: flex-end
+          @media (max-width: 900px)
+            align-items: center
+          p
+            text-align: right
+            @media (max-width: 900px)
+              text-align: center
+      .whyWeBlock > img
+        height: 100%
+        width: 100%
+        object-fit: contain
+        margin-bottom: 25px
+    & > p
+      color: rgba(255, 255, 255, 1)
+      margin-bottom: calc(14px + 1vw)
+  .clientsFeedbackBlock
+    padding: 30px 0
+    display: flex
+    width: 100%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-image: url(../img/testimonial-bg.jpg)
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+
+    h3
+      span
+        color: $orange
+    .lineWrapper
+      height: 6px
+      width: 6px
+      background-color: $orange
+      border-radius: 50%
+      position: relative
+      margin-bottom: calc(30px + 2.6vw)
+      &:before
+        content: ''
+        position: absolute
+        top: 2px
+        right: 30px
+        height: 1px
+        width: calc(30px + 10.6vw)
+        background-color: rgba(255, 255, 255, .5)
+      &:after
+        content: ''
+        position: absolute
+        top: 2px
+        left: 30px
+        height: 1px
+        width: calc(30px + 10.6vw)
+        background-color: rgba(255, 255, 255, .5)
+
+
+
+
+
+    .feedbackBlock
+      width: 100%
+      display: flex
+      justify-content: center
+
+      .feedbackWrapper
+        padding: 30px 0
+        max-width: 1170px
+        display: flex
+        margin-bottom: calc(15px + 5vw)
+        justify-content: center
+        flex-wrap: wrap
+        .feedbackItem
+          flex: 1 1 calc(50% - 30px)
+          padding: 30px
+          background-color: rgba(20, 20, 20, .5)
+          margin: 15px
+          min-width: 280px
+          border-radius: 5px
+          i
+            color: $orange
+            font-size: calc(14px + 1vw)
+            margin-bottom: 15px
+          &>span
+            color: rgba(255, 255, 255, 1)
+            line-height: 2
+            letter-spacing: 2px
+            margin-bottom: 20px
+            display: block
+          .clientBlock
+            display: flex
+            align-items: center
+            .clientBlockImg
+              height: 50px
+              width: 50px
+              border-radius: 50%
+              margin-right: 30px
+              img
+                height: 100%
+                width: 100%
+                object-fit: cover
+                border-radius: 50%
+            span
+              color: $orange
+            p
+              color: rgba(255, 255, 255, 1)
+        .owl-dots
+          padding: 20px 0
+          .owl-dot
+            height: 6px
+            width: 10px
+            border-radius: 2px
+            background-color: rgba(100, 100, 100, 1)
+            outline: none
+            &:not(:last-child)
+              margin-right: 10px
+          .owl-dot.active
+            background-color: $orange
+  .clientsFeedbackBlock>p
+    color: rgba(255, 255, 255, 1)
+    margin-bottom: calc(14px + 1vw)
+  .brandsWrapper
+    padding-top: calc(15px + 2vw)
+    display: flex
+    max-width: 1170px
+    flex-wrap: wrap
+    margin-bottom: calc(15px + 2vw)
+    justify-content: center
+    .brandImg
+      height: 150px
+      width: 190px
+      img
+        height: 100%
+        width: 100%
+        object-fit: cover
+    .owl-item
+      display: flex
+      justify-content: center
+  .videoBlock
+    width: 100%
+    max-height: 480px
+    position: relative
+    video
+      max-height: 480px
+      width: 100%
+      object-fit: cover
+    .videoInfoBlock
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 0 15px
+      h3
+        margin-bottom: calc(15px + 5vw)
+        font-weight: bold
+        font-size: calc(14px + 3vw)
+        span
+          color: $orange
+      p
+        color: rgba(255, 255, 255, 1)
+        margin-bottom: calc(15px + 3vw)
+        text-align: center
+      .videoButton
+        border: 2px solid rgba(255, 255, 255, 1)
+        color: rgba(255, 255, 255, 1)
+        background-color: rgba(255, 255, 255, 0)
+        text-transform: uppercase
+        padding: 10px
+        letter-spacing: 3px
+        transition: all .25s
+        cursor: pointer
+        outline: none
+        &:hover
+          background-color: rgba(255, 255, 255, .8)
+          color: rgba(0, 0, 0, 1)
