@@ -100,6 +100,8 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildHtml = gulp.src('app/*.html')
 	.pipe(gulp.dest('dist'));
 
+	var buildLibs = gulp.src('app/libs/**/*')
+		.pipe(gulp.dest('dist/libs'))
 });
 
 gulp.task('clear', function (callback) {
